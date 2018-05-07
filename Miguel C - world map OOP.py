@@ -7,7 +7,6 @@ class Room(object):
         self.west = west
         self.south = south
 
-
     def move(self, direction):
         global current_node
         current_node = globals()[getattr(self, direction)]
@@ -17,9 +16,9 @@ class Room(object):
 west_house = Room("west of house", 'north_house')
 
 room1= Room("BACKDOOR", "OUTSIDE", "the backdoor of the store was green with a exit sign looming over it, it slid open",
-            None, None,"TOOLROOM")
+            None, None,"TOOL ROOM")
 while True:
     print(current_node.name)
     if Command == 'quite':
-
        quit(0)
+
